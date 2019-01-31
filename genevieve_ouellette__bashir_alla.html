@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
    <body>
-       <!-- Équipier 1 : Bachir Alla -->
-       <!-- Équipier 2 : Geneviève Ouellette -->
-       <!-- Exercice #1 -->
+      <!-- Équipier 1 : Bachir Alla -->
+      <!-- Équipier 2 : Geneviève Ouellette -->
+      <!-- Exercice #1 -->
       <section>
          <form action="/action_page.php">
             Nom d'utilisateur:<input type="text" name="username">
@@ -22,50 +22,39 @@
             <input type="submit" value="Signin">
          </form>
       </section>
-<!-- Exercice #3 -->
-<section>
-        <form action="/action_page.php">
-        
-        Nom complet:<input type="text" name="name" required><br>
-        
-        Adresse :<input type="text" name="name" required><br>
-        
-        Avez-vous un numéro d'appartement :<input type="radio" name=is-apartment value="oui">Oui
-        <input type="radio" name=is-apartment value="non">Non<br>
-        
-        Numéro appartement :<input type="text" name="n-apartement" ><br>
-        
-        Téléphone: <input type="tel" name="tel"
-        pattern="^\(514)?[-\s]\d{3}[-\s]\d{4}.*?$" / required><br>
-        
-        Pizza (taille)<input list="pizza size" name="pizza-size" required><br>
-        
-        <datalist id="pizza size">
-         <option value="5$">petite</option>
-         <option value="8$">moyenne</option>
-         <option value="12$">grande</option>
-         </datalist>
-        
-        Pizza (sorte)<input list="pizza type" name="pizza-type" required><br>
-        
-        <datalist id="pizza type">
-         <option value="13$">pepperoni</option>
-         <option value="10$">double fromage</option>
-         <option value="9$">végétarienne</option>
-          <option value="12$">végane</option>
-         </datalist>
-         
-         <!-- À revoir -->
-         Pizza (quantité)<input type="number" name="number" required><br>
-                    Pizza (extras)<br>
-                    <input type="checkbox" name="pizza-extras" value="aucun">Aucun<br>
-                    <input type="checkbox" name="pizza-extras" value="frites">Frites<br>
-                    <input type="checkbox" name="pizza-extras" value="boisson">Boisson<br>
-                    <input type="checkbox" name="pizza-extras" value="poutine">Poutine<br>
-          <!--- Fin partie à revoir --->
-          
-        <input type="submit" value="Commander">
-        </form>
-        </section>
+      <!-- Exercice #3 -->
+      <section>
+         <form action="/action_page.php">
+            Nom complet:<input type="text" name="name" required><br>
+            Adresse :<input type="text" name="name" required><br>
+            Avez-vous un numéro d'appartement :<input type="radio" name=is-apartment value="oui">Oui
+            <input type="radio" name=is-apartment value="non">Non<br>
+            Numéro appartement :<input type="text" name="n-apartement" ><br>
+            Téléphone: <input type="tel" name="tel"
+               pattern="^\(514)?[-\s]\d{3}[-\s]\d{4}.*?$" / required><br>
+            Pizza (taille)<input list="pizza size" name="pizza-size" required><br>
+            <datalist id="pizza size">
+               <option value="5$">petite</option>
+               <option value="8$">moyenne</option>
+               <option value="12$">grande</option>
+            </datalist>
+            Pizza (sorte)<input list="pizza type" name="pizza-type" required><br>
+            <datalist id="pizza type">
+               <option value="13$">pepperoni</option>
+               <option value="10$">double fromage</option>
+               <option value="9$">végétarienne</option>
+               <option value="12$">végane</option>
+            </datalist>
+            <!-- À revoir -->
+            Pizza (quantité)<input type="number" name="number" required><br>
+            Pizza (extras)<br>
+            <input type="checkbox" name="pizza-extras" value="aucun">Aucun<br>
+            <input type="checkbox" name="pizza-extras" value="frites">Frites<br>
+            <input type="checkbox" name="pizza-extras" value="boisson">Boisson<br>
+            <input type="checkbox" name="pizza-extras" value="poutine">Poutine<br>
+            <!--- Fin partie à revoir --->
+            <input type="submit" value="Commander">
+         </form>
+      </section>
    </body>
 </html>
