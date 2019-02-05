@@ -1,60 +1,157 @@
 <!DOCTYPE html>
 <html>
-   <body>
-      <!-- Équipier 1 : Bachir Alla -->
-      <!-- Équipier 2 : Geneviève Ouellette -->
-      <!-- Exercice #1 -->
-      <section>
-         <form action="/action_page.php">
-            Nom d'utilisateur:<input type="text" name="username">
-            Mot de passe:<input type="password" name="password">
-            <input type="submit" value="Login">
-         </form>
-      </section>
-      <!-- Exercice #2 -->
-      <section>
-         <form action="/action_page.php">
-            Nom:<input type="text" name="f-name" required><br>
-            Prénom:<input type="text" name="l-name" required><br>
-            Nom d'utilisateur:<input type="text" name="username" required><br>
-            Mot de passe:<input type="password" name="password" required><br>
-            Confirmation du mot de passe:<input type="password" name="password" required><br>
-            <input type="submit" value="Signin">
-         </form>
-      </section>
-      <!-- Exercice #3 -->
-      <section>
-         <form action="/action_page.php">
-            Nom complet:<input type="text" name="name" required><br>
-            Adresse :<input type="text" name="name" required><br>
-            Avez-vous un numéro d'appartement :<input type="radio" name=is-apartment value="oui">Oui
-            <input type="radio" name=is-apartment value="non">Non<br>
-            Numéro appartement :<input type="text" name="n-apartement" ><br>
-            Téléphone: <input type="tel" name="tel"
-               pattern="^\(514)?[-\s]\d{3}[-\s]\d{4}.*?$" / required><br>
-            Pizza (taille)<input list="pizza size" name="pizza-size" required><br>
-            <datalist id="pizza size">
-               <option value="5$">petite</option>
-               <option value="8$">moyenne</option>
-               <option value="12$">grande</option>
-            </datalist>
-            Pizza (sorte)<input list="pizza type" name="pizza-type" required><br>
-            <datalist id="pizza type">
-               <option value="13$">pepperoni</option>
-               <option value="10$">double fromage</option>
-               <option value="9$">végétarienne</option>
-               <option value="12$">végane</option>
-            </datalist>
-            <!-- À revoir -->
-            Pizza (quantité)<input type="number" name="number" required><br>
-            Pizza (extras)<br>
-            <input type="checkbox" name="pizza-extras" value="aucun">Aucun<br>
-            <input type="checkbox" name="pizza-extras" value="frites">Frites<br>
-            <input type="checkbox" name="pizza-extras" value="boisson">Boisson<br>
-            <input type="checkbox" name="pizza-extras" value="poutine">Poutine<br>
-            <!--- Fin partie à revoir --->
-            <input type="submit" value="Commander">
-         </form>
-      </section>
-   </body>
+  <body>
+    <!-- Équipier 1 : Bachir Alla -->
+    <!-- Équipier 2 : Geneviève Ouellette -->
+
+    <!-- Exercice #1 -->
+    <section>
+      <form action="/action_page.php">
+        <table>
+          <tr>
+            <td>Nom d'utilisateur:</td>
+            <td><input type="text" name="username" /></td>
+          </tr>
+          <tr>
+            <td>Mot de passe:</td>
+            <td><input type="password" name="password" /></td>
+          </tr>
+        </table>
+
+        <input type="submit" value="Login" />
+      </form>
+      <br />
+      <br />
+    </section>
+
+    <!-- Exercice #2 -->
+    <section>
+      <form action="/action_page.php">
+        <table>
+          <tr>
+            <td>Nom:</td>
+            <td><input type="text" name="l-name" required /></td>
+          </tr>
+          <tr>
+            <td>Prénom:</td>
+            <td><input type="text" name="f-name" required /></td>
+          </tr>
+          <tr>
+            <td>Nom d'utilisateur:</td>
+            <td><input type="text" name="username" required /></td>
+          </tr>
+          <tr>
+            <td>Mot de passe:</td>
+            <td><input type="password" name="password" required /></td>
+          </tr>
+          <tr>
+            <td>Confirmation du mot de passe:</td>
+            <td><input type="password" name="c-password" required /></td>
+          </tr>
+        </table>
+
+        <input type="submit" value="Signin" />
+      </form>
+      <br />
+      <br />
+    </section>
+
+    <!-- Exercice #3 -->
+    <section>
+      <form action="/action_page.php">
+        <table>
+          <tr>
+            <td>Nom complet:</td>
+            <td><input type="text" name="name" required /></td>
+          </tr>
+          <tr>
+            <td>Adresse :</td>
+            <td><input type="text" name="address" required /></td>
+          </tr>
+          <tr>
+            <td>Avez-vous un numéro d'appartement :</td>
+            <td>
+              <input type="radio" name="is-apartment" value="oui" />Oui
+              <input type="radio" name="is-apartment" value="non" />Non
+            </td>
+          </tr>
+          <tr>
+            <td>Numéro appartement :</td>
+            <td><input type="text" name="n-apartement" size="4" /></td>
+          </tr>
+          <tr>
+            <td>Téléphone:</td>
+            <td>
+              <input
+                type="tel"
+                name="tel"
+                placeholder="(514)xxx-xxxx"
+                pattern="^\(514)?[-\s]\d{3}[-\s]\d{4}.*?$"
+                size="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pizza (taille)</td>
+            <td><input list="pizza size" name="pizza-size" required /></td>
+          </tr>
+          <datalist id="pizza size">
+            <option value="5$">petite</option>
+            <option value="8$">moyenne</option>
+            <option value="12$">grande</option>
+          </datalist>
+          <tr>
+            <td>Pizza (sorte)</td>
+            <td><input list="pizza type" name="pizza-type" required /></td>
+          </tr>
+          <datalist id="pizza type">
+            <option value="13$">pepperoni</option>
+            <option value="10$">double fromage</option>
+            <option value="9$">végétarienne</option>
+            <option value="12$">végane</option>
+          </datalist>
+          <tr>
+            <td>Pizza (quantité)</td>
+            <td>
+              <input
+                type="number"
+                name="pizza-number"
+                value="1"
+                style="width: 40px;"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pizza (extras)</td>
+            <td>
+              <input
+                type="checkbox"
+                name="pizza-extras"
+                value="aucun"
+              />Aucun<br />
+              <input
+                type="checkbox"
+                name="pizza-extras"
+                value="frites"
+              />Frites<br />
+              <input
+                type="checkbox"
+                name="pizza-extras"
+                value="boisson"
+              />Boisson<br />
+              <input
+                type="checkbox"
+                name="pizza-extras"
+                value="poutine"
+              />Poutine
+            </td>
+          </tr>
+        </table>
+
+        <input type="submit" value="Commander" />
+      </form>
+    </section>
+  </body>
 </html>
